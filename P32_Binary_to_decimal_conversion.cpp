@@ -14,15 +14,25 @@ int main(){
 
     int decimalNumber=0;
     int iterate=0;
+    int digit;
 
     while(inputBinary){
-        decimalNumber=decimalNumber +(inputBinary%10)*pow(2,iterate);
+        digit=inputBinary%10;
+        if(digit==1 || digit==0){
+
+        decimalNumber=decimalNumber +(digit)*pow(2,iterate);
 
         inputBinary=inputBinary/10;
         iterate++;
+        }else{
+            break;
+        }
     }
-    cout<<"The decimal numebr for "<<input<<" is "<<decimalNumber;
-
+    if(digit==1 || digit==0){
+    cout<<"The decimal number for "<<input<<" is "<<decimalNumber<<endl;
+    }else{
+        cout<<"Please enter a valid binary string"<<endl;
+    }
     
 
     return 0;
