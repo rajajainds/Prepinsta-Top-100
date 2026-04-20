@@ -28,7 +28,8 @@ int main(){
             break;
         }
     }
-    if(digit==1 || digit==0){
+
+    if(digit>=0 && digit<=8){
     cout<<"The decimal number for "<<input<<" is "<<decimalNumber<<endl;
     }else{
         cout<<"Please enter a valid Octal string"<<endl;
