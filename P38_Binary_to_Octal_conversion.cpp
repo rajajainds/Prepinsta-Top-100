@@ -51,7 +51,6 @@ int main(){
 
     while(input){
         last3Digits=input%1000;
-        cout<<last3Digits<<endl;
 
         switch(last3Digits){
             case 0:
@@ -68,8 +67,6 @@ int main(){
             break;
              case 100:
             octalDigit=4;
-            break;
-            octalDigit=1;
             break;
              case 101:
             octalDigit=5;
