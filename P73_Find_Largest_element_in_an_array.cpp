@@ -17,13 +17,5 @@ int main(){
     
     cout<<"The largest element in array is "<<largest<<endl;
 
-    
-
-
-
-
-
-
-
     return 0;
 }
